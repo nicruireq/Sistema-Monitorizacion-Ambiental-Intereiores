@@ -1,0 +1,15 @@
+{
+  "version": 2,
+  "minor_version": 1,
+  "key": "person",
+  "data": {
+    "items": [
+      {
+        "id": "nicolas_ruiz",
+        "name": "Nicolas Ruiz",
+        "user_id": "50366d4ad77c4d428f3865f37e8c3bfd",
+        "device_trackers": []
+      }
+    ]
+  }
+}

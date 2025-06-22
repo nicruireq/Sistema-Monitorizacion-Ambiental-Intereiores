@@ -1,0 +1,36 @@
+
+# Loads default set of integrations. Do not remove.
+default_config:
+
+# Load frontend themes from the themes folder
+frontend:
+  themes: !include_dir_merge_named themes
+
+automation: !include automations.yaml
+script: !include scripts.yaml
+scene: !include scenes.yaml
+
+# My AQI MQTT sensors
+mqtt:
+  sensor:
+    - name: "Temperature"
+      state_topic: "/tfm/nrr/airquality/measures"
+      suggested_display_precision: 1
+      unit_of_measurement: "ºC"
+      value_template: "{{ value_json.temp_celsius }}"
+    - name: "Humidity"
+      state_topic: "/tfm/nrr/airquality/measures"
+      unit_of_measurement: "%"
+      value_template: "{{ value_json.humidity_rh }}"
+    - name: "VOC"
+      state_topic: "/tfm/nrr/airquality/measures"
+      value_template: "{{ value_json.voc_index }}"
+
+# Automation to trigger configuration sent of aqi device on entity configure button pressed
+automation config_aqi_device:
+  - alias: "Trigger the sent of configuration for aqi device over mqtt"
+    trigger:
+      - platform: state
+        entity_id: input_button.configure
+    action:
+      - service: script.send_mqtt_aqi_config

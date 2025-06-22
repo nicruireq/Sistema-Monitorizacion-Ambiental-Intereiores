@@ -1,0 +1,1191 @@
+{
+  "version": 1,
+  "minor_version": 1,
+  "key": "trace.saved_traces",
+  "data": {
+    "automation.None": [
+      {
+        "extended_dict": {
+          "last_step": "action/0",
+          "run_id": "d2280046a7ddce9f42f371f02493740e",
+          "state": "running",
+          "script_execution": null,
+          "timestamp": {
+            "start": "2025-06-15T20:40:54.437660+00:00",
+            "finish": null
+          },
+          "domain": "automation",
+          "item_id": "None",
+          "trigger": "state of input_button.configure",
+          "trace": {
+            "trigger/0": [
+              {
+                "path": "trigger/0",
+                "timestamp": "2025-06-15T20:40:54.437911+00:00",
+                "changed_variables": {
+                  "this": {
+                    "entity_id": "automation.trigger_the_sent_of_configuration_for_aqi_device_over_mqtt",
+                    "state": "on",
+                    "attributes": {
+                      "last_triggered": "2025-06-15T20:40:48.045193+00:00",
+                      "mode": "single",
+                      "current": 0,
+                      "friendly_name": "Trigger the sent of configuration for aqi device over mqtt"
+                    },
+                    "last_changed": "2025-06-15T16:42:50.673110+00:00",
+                    "last_reported": "2025-06-15T20:40:48.073917+00:00",
+                    "last_updated": "2025-06-15T20:40:48.073917+00:00",
+                    "context": {
+                      "id": "01JXTN5H5CT2ZA76KVEFTT8AT6",
+                      "parent_id": "01JXTN5H590RWRR1591CXVR4YS",
+                      "user_id": null
+                    }
+                  },
+                  "trigger": {
+                    "id": "0",
+                    "idx": "0",
+                    "alias": null,
+                    "platform": "state",
+                    "entity_id": "input_button.configure",
+                    "from_state": {
+                      "entity_id": "input_button.configure",
+                      "state": "2025-06-15T20:40:48.042902+00:00",
+                      "attributes": {
+                        "editable": true,
+                        "icon": "mdi:send",
+                        "friendly_name": "configure"
+                      },
+                      "last_changed": "2025-06-15T20:40:48.043152+00:00",
+                      "last_reported": "2025-06-15T20:40:48.043152+00:00",
+                      "last_updated": "2025-06-15T20:40:48.043152+00:00",
+                      "context": {
+                        "id": "01JXTN5H590RWRR1591CXVR4YS",
+                        "parent_id": null,
+                        "user_id": "50366d4ad77c4d428f3865f37e8c3bfd"
+                      }
+                    },
+                    "to_state": {
+                      "entity_id": "input_button.configure",
+                      "state": "2025-06-15T20:40:54.436757+00:00",
+                      "attributes": {
+                        "editable": true,
+                        "icon": "mdi:send",
+                        "friendly_name": "configure"
+                      },
+                      "last_changed": "2025-06-15T20:40:54.436900+00:00",
+                      "last_reported": "2025-06-15T20:40:54.436900+00:00",
+                      "last_updated": "2025-06-15T20:40:54.436900+00:00",
+                      "context": {
+                        "id": "01JXTN5QD4D3QQF9HCAVBFMXQB",
+                        "parent_id": null,
+                        "user_id": "50366d4ad77c4d428f3865f37e8c3bfd"
+                      }
+                    },
+                    "for": null,
+                    "attribute": null,
+                    "description": "state of input_button.configure"
+                  }
+                }
+              }
+            ],
+            "action/0": [
+              {
+                "path": "action/0",
+                "timestamp": "2025-06-15T20:40:54.438622+00:00",
+                "child_id": {
+                  "domain": "script",
+                  "item_id": "send_mqtt_aqi_config",
+                  "run_id": "b6f4d952facdad58b41fdb8141cd2f01"
+                },
+                "changed_variables": {
+                  "context": {
+                    "id": "01JXTN5QD5EJGYGW9M1JT982HE",
+                    "parent_id": "01JXTN5QD4D3QQF9HCAVBFMXQB",
+                    "user_id": null
+                  }
+                },
+                "result": {
+                  "params": {
+                    "domain": "script",
+                    "service": "send_mqtt_aqi_config",
+                    "service_data": {},
+                    "target": {}
+                  },
+                  "running_script": true
+                }
+              }
+            ]
+          },
+          "config": {
+            "alias": "Trigger the sent of configuration for aqi device over mqtt",
+            "trigger": [
+              {
+                "platform": "state",
+                "entity_id": "input_button.configure"
+              }
+            ],
+            "action": [
+              {
+                "action": "script.send_mqtt_aqi_config"
+              }
+            ]
+          },
+          "blueprint_inputs": null,
+          "context": {
+            "id": "01JXTN5QD5EJGYGW9M1JT982HE",
+            "parent_id": "01JXTN5QD4D3QQF9HCAVBFMXQB",
+            "user_id": null
+          }
+        },
+        "short_dict": {
+          "last_step": "action/0",
+          "run_id": "d2280046a7ddce9f42f371f02493740e",
+          "state": "running",
+          "script_execution": null,
+          "timestamp": {
+            "start": "2025-06-15T20:40:54.437660+00:00",
+            "finish": null
+          },
+          "domain": "automation",
+          "item_id": "None",
+          "trigger": "state of input_button.configure"
+        }
+      },
+      {
+        "extended_dict": {
+          "last_step": "action/0",
+          "run_id": "f993d44954b0e642e0e7a90243a3f2ea",
+          "state": "running",
+          "script_execution": null,
+          "timestamp": {
+            "start": "2025-06-15T20:41:06.182832+00:00",
+            "finish": null
+          },
+          "domain": "automation",
+          "item_id": "None",
+          "trigger": "state of input_button.configure",
+          "trace": {
+            "trigger/0": [
+              {
+                "path": "trigger/0",
+                "timestamp": "2025-06-15T20:41:06.183092+00:00",
+                "changed_variables": {
+                  "this": {
+                    "entity_id": "automation.trigger_the_sent_of_configuration_for_aqi_device_over_mqtt",
+                    "state": "on",
+                    "attributes": {
+                      "last_triggered": "2025-06-15T20:40:54.438138+00:00",
+                      "mode": "single",
+                      "current": 0,
+                      "friendly_name": "Trigger the sent of configuration for aqi device over mqtt"
+                    },
+                    "last_changed": "2025-06-15T16:42:50.673110+00:00",
+                    "last_reported": "2025-06-15T20:40:54.456034+00:00",
+                    "last_updated": "2025-06-15T20:40:54.456034+00:00",
+                    "context": {
+                      "id": "01JXTN5QD5EJGYGW9M1JT982HE",
+                      "parent_id": "01JXTN5QD4D3QQF9HCAVBFMXQB",
+                      "user_id": null
+                    }
+                  },
+                  "trigger": {
+                    "id": "0",
+                    "idx": "0",
+                    "alias": null,
+                    "platform": "state",
+                    "entity_id": "input_button.configure",
+                    "from_state": {
+                      "entity_id": "input_button.configure",
+                      "state": "2025-06-15T20:40:54.436757+00:00",
+                      "attributes": {
+                        "editable": true,
+                        "icon": "mdi:send",
+                        "friendly_name": "configure"
+                      },
+                      "last_changed": "2025-06-15T20:40:54.436900+00:00",
+                      "last_reported": "2025-06-15T20:40:54.436900+00:00",
+                      "last_updated": "2025-06-15T20:40:54.436900+00:00",
+                      "context": {
+                        "id": "01JXTN5QD4D3QQF9HCAVBFMXQB",
+                        "parent_id": null,
+                        "user_id": "50366d4ad77c4d428f3865f37e8c3bfd"
+                      }
+                    },
+                    "to_state": {
+                      "entity_id": "input_button.configure",
+                      "state": "2025-06-15T20:41:06.181951+00:00",
+                      "attributes": {
+                        "editable": true,
+                        "icon": "mdi:send",
+                        "friendly_name": "configure"
+                      },
+                      "last_changed": "2025-06-15T20:41:06.182096+00:00",
+                      "last_reported": "2025-06-15T20:41:06.182096+00:00",
+                      "last_updated": "2025-06-15T20:41:06.182096+00:00",
+                      "context": {
+                        "id": "01JXTN62W5Q7B765QKEA49BTB0",
+                        "parent_id": null,
+                        "user_id": "50366d4ad77c4d428f3865f37e8c3bfd"
+                      }
+                    },
+                    "for": null,
+                    "attribute": null,
+                    "description": "state of input_button.configure"
+                  }
+                }
+              }
+            ],
+            "action/0": [
+              {
+                "path": "action/0",
+                "timestamp": "2025-06-15T20:41:06.183817+00:00",
+                "child_id": {
+                  "domain": "script",
+                  "item_id": "send_mqtt_aqi_config",
+                  "run_id": "443496c5b73e92e7a31b209bfce6130d"
+                },
+                "changed_variables": {
+                  "context": {
+                    "id": "01JXTN62W6V8G91W6XWXE41ZPS",
+                    "parent_id": "01JXTN62W5Q7B765QKEA49BTB0",
+                    "user_id": null
+                  }
+                },
+                "result": {
+                  "params": {
+                    "domain": "script",
+                    "service": "send_mqtt_aqi_config",
+                    "service_data": {},
+                    "target": {}
+                  },
+                  "running_script": true
+                }
+              }
+            ]
+          },
+          "config": {
+            "alias": "Trigger the sent of configuration for aqi device over mqtt",
+            "trigger": [
+              {
+                "platform": "state",
+                "entity_id": "input_button.configure"
+              }
+            ],
+            "action": [
+              {
+                "action": "script.send_mqtt_aqi_config"
+              }
+            ]
+          },
+          "blueprint_inputs": null,
+          "context": {
+            "id": "01JXTN62W6V8G91W6XWXE41ZPS",
+            "parent_id": "01JXTN62W5Q7B765QKEA49BTB0",
+            "user_id": null
+          }
+        },
+        "short_dict": {
+          "last_step": "action/0",
+          "run_id": "f993d44954b0e642e0e7a90243a3f2ea",
+          "state": "running",
+          "script_execution": null,
+          "timestamp": {
+            "start": "2025-06-15T20:41:06.182832+00:00",
+            "finish": null
+          },
+          "domain": "automation",
+          "item_id": "None",
+          "trigger": "state of input_button.configure"
+        }
+      },
+      {
+        "extended_dict": {
+          "last_step": "action/0",
+          "run_id": "74e5156dc5218b8b9253c8b2117a4ac0",
+          "state": "running",
+          "script_execution": null,
+          "timestamp": {
+            "start": "2025-06-15T20:51:27.018393+00:00",
+            "finish": null
+          },
+          "domain": "automation",
+          "item_id": "None",
+          "trigger": "state of input_button.configure",
+          "trace": {
+            "trigger/0": [
+              {
+                "path": "trigger/0",
+                "timestamp": "2025-06-15T20:51:27.018744+00:00",
+                "changed_variables": {
+                  "this": {
+                    "entity_id": "automation.trigger_the_sent_of_configuration_for_aqi_device_over_mqtt",
+                    "state": "on",
+                    "attributes": {
+                      "last_triggered": "2025-06-15T20:41:06.183318+00:00",
+                      "mode": "single",
+                      "current": 0,
+                      "friendly_name": "Trigger the sent of configuration for aqi device over mqtt"
+                    },
+                    "last_changed": "2025-06-15T16:42:50.673110+00:00",
+                    "last_reported": "2025-06-15T20:41:06.196787+00:00",
+                    "last_updated": "2025-06-15T20:41:06.196787+00:00",
+                    "context": {
+                      "id": "01JXTN62W6V8G91W6XWXE41ZPS",
+                      "parent_id": "01JXTN62W5Q7B765QKEA49BTB0",
+                      "user_id": null
+                    }
+                  },
+                  "trigger": {
+                    "id": "0",
+                    "idx": "0",
+                    "alias": null,
+                    "platform": "state",
+                    "entity_id": "input_button.configure",
+                    "from_state": {
+                      "entity_id": "input_button.configure",
+                      "state": "2025-06-15T20:41:06.181951+00:00",
+                      "attributes": {
+                        "editable": true,
+                        "icon": "mdi:send",
+                        "friendly_name": "configure"
+                      },
+                      "last_changed": "2025-06-15T20:41:06.182096+00:00",
+                      "last_reported": "2025-06-15T20:41:06.182096+00:00",
+                      "last_updated": "2025-06-15T20:41:06.182096+00:00",
+                      "context": {
+                        "id": "01JXTN62W5Q7B765QKEA49BTB0",
+                        "parent_id": null,
+                        "user_id": "50366d4ad77c4d428f3865f37e8c3bfd"
+                      }
+                    },
+                    "to_state": {
+                      "entity_id": "input_button.configure",
+                      "state": "2025-06-15T20:51:27.016878+00:00",
+                      "attributes": {
+                        "editable": true,
+                        "icon": "mdi:send",
+                        "friendly_name": "configure"
+                      },
+                      "last_changed": "2025-06-15T20:51:27.017128+00:00",
+                      "last_reported": "2025-06-15T20:51:27.017128+00:00",
+                      "last_updated": "2025-06-15T20:51:27.017128+00:00",
+                      "context": {
+                        "id": "01JXTNS157Z222NFM8RJQDJG8M",
+                        "parent_id": null,
+                        "user_id": "50366d4ad77c4d428f3865f37e8c3bfd"
+                      }
+                    },
+                    "for": null,
+                    "attribute": null,
+                    "description": "state of input_button.configure"
+                  }
+                }
+              }
+            ],
+            "action/0": [
+              {
+                "path": "action/0",
+                "timestamp": "2025-06-15T20:51:27.020062+00:00",
+                "child_id": {
+                  "domain": "script",
+                  "item_id": "send_mqtt_aqi_config",
+                  "run_id": "5c9dc9c06f4158f24add9fbb099edd4c"
+                },
+                "changed_variables": {
+                  "context": {
+                    "id": "01JXTNS15A0JDFT6KPQ1MQ3C15",
+                    "parent_id": "01JXTNS157Z222NFM8RJQDJG8M",
+                    "user_id": null
+                  }
+                },
+                "result": {
+                  "params": {
+                    "domain": "script",
+                    "service": "send_mqtt_aqi_config",
+                    "service_data": {},
+                    "target": {}
+                  },
+                  "running_script": true
+                }
+              }
+            ]
+          },
+          "config": {
+            "alias": "Trigger the sent of configuration for aqi device over mqtt",
+            "trigger": [
+              {
+                "platform": "state",
+                "entity_id": "input_button.configure"
+              }
+            ],
+            "action": [
+              {
+                "action": "script.send_mqtt_aqi_config"
+              }
+            ]
+          },
+          "blueprint_inputs": null,
+          "context": {
+            "id": "01JXTNS15A0JDFT6KPQ1MQ3C15",
+            "parent_id": "01JXTNS157Z222NFM8RJQDJG8M",
+            "user_id": null
+          }
+        },
+        "short_dict": {
+          "last_step": "action/0",
+          "run_id": "74e5156dc5218b8b9253c8b2117a4ac0",
+          "state": "running",
+          "script_execution": null,
+          "timestamp": {
+            "start": "2025-06-15T20:51:27.018393+00:00",
+            "finish": null
+          },
+          "domain": "automation",
+          "item_id": "None",
+          "trigger": "state of input_button.configure"
+        }
+      },
+      {
+        "extended_dict": {
+          "last_step": "action/0",
+          "run_id": "fb4777a04fcfe0140084a5507e4d5f2b",
+          "state": "running",
+          "script_execution": null,
+          "timestamp": {
+            "start": "2025-06-15T20:51:32.600070+00:00",
+            "finish": null
+          },
+          "domain": "automation",
+          "item_id": "None",
+          "trigger": "state of input_button.configure",
+          "trace": {
+            "trigger/0": [
+              {
+                "path": "trigger/0",
+                "timestamp": "2025-06-15T20:51:32.600637+00:00",
+                "changed_variables": {
+                  "this": {
+                    "entity_id": "automation.trigger_the_sent_of_configuration_for_aqi_device_over_mqtt",
+                    "state": "on",
+                    "attributes": {
+                      "last_triggered": "2025-06-15T20:51:27.019192+00:00",
+                      "mode": "single",
+                      "current": 0,
+                      "friendly_name": "Trigger the sent of configuration for aqi device over mqtt"
+                    },
+                    "last_changed": "2025-06-15T16:42:50.673110+00:00",
+                    "last_reported": "2025-06-15T20:51:27.046418+00:00",
+                    "last_updated": "2025-06-15T20:51:27.046418+00:00",
+                    "context": {
+                      "id": "01JXTNS15A0JDFT6KPQ1MQ3C15",
+                      "parent_id": "01JXTNS157Z222NFM8RJQDJG8M",
+                      "user_id": null
+                    }
+                  },
+                  "trigger": {
+                    "id": "0",
+                    "idx": "0",
+                    "alias": null,
+                    "platform": "state",
+                    "entity_id": "input_button.configure",
+                    "from_state": {
+                      "entity_id": "input_button.configure",
+                      "state": "2025-06-15T20:51:27.016878+00:00",
+                      "attributes": {
+                        "editable": true,
+                        "icon": "mdi:send",
+                        "friendly_name": "configure"
+                      },
+                      "last_changed": "2025-06-15T20:51:27.017128+00:00",
+                      "last_reported": "2025-06-15T20:51:27.017128+00:00",
+                      "last_updated": "2025-06-15T20:51:27.017128+00:00",
+                      "context": {
+                        "id": "01JXTNS157Z222NFM8RJQDJG8M",
+                        "parent_id": null,
+                        "user_id": "50366d4ad77c4d428f3865f37e8c3bfd"
+                      }
+                    },
+                    "to_state": {
+                      "entity_id": "input_button.configure",
+                      "state": "2025-06-15T20:51:32.598742+00:00",
+                      "attributes": {
+                        "editable": true,
+                        "icon": "mdi:send",
+                        "friendly_name": "configure"
+                      },
+                      "last_changed": "2025-06-15T20:51:32.598960+00:00",
+                      "last_reported": "2025-06-15T20:51:32.598960+00:00",
+                      "last_updated": "2025-06-15T20:51:32.598960+00:00",
+                      "context": {
+                        "id": "01JXTNS6KN8KRJVSN8QZCT4PG7",
+                        "parent_id": null,
+                        "user_id": "50366d4ad77c4d428f3865f37e8c3bfd"
+                      }
+                    },
+                    "for": null,
+                    "attribute": null,
+                    "description": "state of input_button.configure"
+                  }
+                }
+              }
+            ],
+            "action/0": [
+              {
+                "path": "action/0",
+                "timestamp": "2025-06-15T20:51:32.601837+00:00",
+                "child_id": {
+                  "domain": "script",
+                  "item_id": "send_mqtt_aqi_config",
+                  "run_id": "97d246318b7726d0892d0e2433684eb6"
+                },
+                "changed_variables": {
+                  "context": {
+                    "id": "01JXTNS6KQ59TDP43YJTTGNNE3",
+                    "parent_id": "01JXTNS6KN8KRJVSN8QZCT4PG7",
+                    "user_id": null
+                  }
+                },
+                "result": {
+                  "params": {
+                    "domain": "script",
+                    "service": "send_mqtt_aqi_config",
+                    "service_data": {},
+                    "target": {}
+                  },
+                  "running_script": true
+                }
+              }
+            ]
+          },
+          "config": {
+            "alias": "Trigger the sent of configuration for aqi device over mqtt",
+            "trigger": [
+              {
+                "platform": "state",
+                "entity_id": "input_button.configure"
+              }
+            ],
+            "action": [
+              {
+                "action": "script.send_mqtt_aqi_config"
+              }
+            ]
+          },
+          "blueprint_inputs": null,
+          "context": {
+            "id": "01JXTNS6KQ59TDP43YJTTGNNE3",
+            "parent_id": "01JXTNS6KN8KRJVSN8QZCT4PG7",
+            "user_id": null
+          }
+        },
+        "short_dict": {
+          "last_step": "action/0",
+          "run_id": "fb4777a04fcfe0140084a5507e4d5f2b",
+          "state": "running",
+          "script_execution": null,
+          "timestamp": {
+            "start": "2025-06-15T20:51:32.600070+00:00",
+            "finish": null
+          },
+          "domain": "automation",
+          "item_id": "None",
+          "trigger": "state of input_button.configure"
+        }
+      },
+      {
+        "extended_dict": {
+          "last_step": "action/0",
+          "run_id": "10e053cbf0c63f8f5e80ed2145fdc484",
+          "state": "running",
+          "script_execution": null,
+          "timestamp": {
+            "start": "2025-06-15T20:53:10.543501+00:00",
+            "finish": null
+          },
+          "domain": "automation",
+          "item_id": "None",
+          "trigger": "state of input_button.configure",
+          "trace": {
+            "trigger/0": [
+              {
+                "path": "trigger/0",
+                "timestamp": "2025-06-15T20:53:10.543944+00:00",
+                "changed_variables": {
+                  "this": {
+                    "entity_id": "automation.trigger_the_sent_of_configuration_for_aqi_device_over_mqtt",
+                    "state": "on",
+                    "attributes": {
+                      "last_triggered": "2025-06-15T20:51:32.601039+00:00",
+                      "mode": "single",
+                      "current": 0,
+                      "friendly_name": "Trigger the sent of configuration for aqi device over mqtt"
+                    },
+                    "last_changed": "2025-06-15T16:42:50.673110+00:00",
+                    "last_reported": "2025-06-15T20:51:32.628134+00:00",
+                    "last_updated": "2025-06-15T20:51:32.628134+00:00",
+                    "context": {
+                      "id": "01JXTNS6KQ59TDP43YJTTGNNE3",
+                      "parent_id": "01JXTNS6KN8KRJVSN8QZCT4PG7",
+                      "user_id": null
+                    }
+                  },
+                  "trigger": {
+                    "id": "0",
+                    "idx": "0",
+                    "alias": null,
+                    "platform": "state",
+                    "entity_id": "input_button.configure",
+                    "from_state": {
+                      "entity_id": "input_button.configure",
+                      "state": "2025-06-15T20:51:32.598742+00:00",
+                      "attributes": {
+                        "editable": true,
+                        "icon": "mdi:send",
+                        "friendly_name": "configure"
+                      },
+                      "last_changed": "2025-06-15T20:51:32.598960+00:00",
+                      "last_reported": "2025-06-15T20:51:32.598960+00:00",
+                      "last_updated": "2025-06-15T20:51:32.598960+00:00",
+                      "context": {
+                        "id": "01JXTNS6KN8KRJVSN8QZCT4PG7",
+                        "parent_id": null,
+                        "user_id": "50366d4ad77c4d428f3865f37e8c3bfd"
+                      }
+                    },
+                    "to_state": {
+                      "entity_id": "input_button.configure",
+                      "state": "2025-06-15T20:53:10.542085+00:00",
+                      "attributes": {
+                        "editable": true,
+                        "icon": "mdi:send",
+                        "friendly_name": "configure"
+                      },
+                      "last_changed": "2025-06-15T20:53:10.542319+00:00",
+                      "last_reported": "2025-06-15T20:53:10.542319+00:00",
+                      "last_updated": "2025-06-15T20:53:10.542319+00:00",
+                      "context": {
+                        "id": "01JXTNW68DKZN31S3TF885E97Y",
+                        "parent_id": null,
+                        "user_id": "50366d4ad77c4d428f3865f37e8c3bfd"
+                      }
+                    },
+                    "for": null,
+                    "attribute": null,
+                    "description": "state of input_button.configure"
+                  }
+                }
+              }
+            ],
+            "action/0": [
+              {
+                "path": "action/0",
+                "timestamp": "2025-06-15T20:53:10.545192+00:00",
+                "child_id": {
+                  "domain": "script",
+                  "item_id": "send_mqtt_aqi_config",
+                  "run_id": "82be49c22b7845ad24a667b0f9140670"
+                },
+                "changed_variables": {
+                  "context": {
+                    "id": "01JXTNW68FMD8R839FGSET1P8K",
+                    "parent_id": "01JXTNW68DKZN31S3TF885E97Y",
+                    "user_id": null
+                  }
+                },
+                "result": {
+                  "params": {
+                    "domain": "script",
+                    "service": "send_mqtt_aqi_config",
+                    "service_data": {},
+                    "target": {}
+                  },
+                  "running_script": true
+                }
+              }
+            ]
+          },
+          "config": {
+            "alias": "Trigger the sent of configuration for aqi device over mqtt",
+            "trigger": [
+              {
+                "platform": "state",
+                "entity_id": "input_button.configure"
+              }
+            ],
+            "action": [
+              {
+                "action": "script.send_mqtt_aqi_config"
+              }
+            ]
+          },
+          "blueprint_inputs": null,
+          "context": {
+            "id": "01JXTNW68FMD8R839FGSET1P8K",
+            "parent_id": "01JXTNW68DKZN31S3TF885E97Y",
+            "user_id": null
+          }
+        },
+        "short_dict": {
+          "last_step": "action/0",
+          "run_id": "10e053cbf0c63f8f5e80ed2145fdc484",
+          "state": "running",
+          "script_execution": null,
+          "timestamp": {
+            "start": "2025-06-15T20:53:10.543501+00:00",
+            "finish": null
+          },
+          "domain": "automation",
+          "item_id": "None",
+          "trigger": "state of input_button.configure"
+        }
+      }
+    ],
+    "script.send_mqtt_aqi_config": [
+      {
+        "extended_dict": {
+          "last_step": "sequence/0",
+          "run_id": "b6f4d952facdad58b41fdb8141cd2f01",
+          "state": "stopped",
+          "script_execution": "finished",
+          "timestamp": {
+            "start": "2025-06-15T20:40:54.439064+00:00",
+            "finish": "2025-06-15T20:40:54.455581+00:00"
+          },
+          "domain": "script",
+          "item_id": "send_mqtt_aqi_config",
+          "trace": {
+            "sequence/0": [
+              {
+                "path": "sequence/0",
+                "timestamp": "2025-06-15T20:40:54.439805+00:00",
+                "changed_variables": {
+                  "this": {
+                    "entity_id": "script.send_mqtt_aqi_config",
+                    "state": "off",
+                    "attributes": {
+                      "last_triggered": "2025-06-15T20:40:48.047235+00:00",
+                      "mode": "single",
+                      "current": 0,
+                      "friendly_name": "Send AQI Device configuration over mqtt"
+                    },
+                    "last_changed": "2025-06-15T20:40:48.070418+00:00",
+                    "last_reported": "2025-06-15T20:40:48.070418+00:00",
+                    "last_updated": "2025-06-15T20:40:48.070418+00:00",
+                    "context": {
+                      "id": "01JXTN5H5CT2ZA76KVEFTT8AT6",
+                      "parent_id": "01JXTN5H590RWRR1591CXVR4YS",
+                      "user_id": null
+                    }
+                  },
+                  "context": {
+                    "id": "01JXTN5QD5EJGYGW9M1JT982HE",
+                    "parent_id": "01JXTN5QD4D3QQF9HCAVBFMXQB",
+                    "user_id": null
+                  }
+                },
+                "result": {
+                  "params": {
+                    "domain": "mqtt",
+                    "service": "publish",
+                    "service_data": {
+                      "topic": "/tfm/nrr/airquality/config",
+                      "payload": "{\n  \"screen_sec\": 100,\n  \"room\": \"salon\",\n  \"alarm_voc\": 151.0,\n  \"alarm_temp_h\": 33.0,\n  \"alarm_temp_l\": 17.0,\n  \"alarm_hum_h\": 70.0,\n  \"alarm_hum_l\": 50.0,\n  \"rst_wifi_prov\": false\n}"
+                    },
+                    "target": {}
+                  },
+                  "running_script": false
+                }
+              }
+            ]
+          },
+          "config": {
+            "alias": "Send AQI Device configuration over mqtt",
+            "sequence": [
+              {
+                "data": {
+                  "topic": "/tfm/nrr/airquality/config",
+                  "payload": "{\n  \"screen_sec\": 100,\n  \"room\": \"{{ states('input_text.room_name') }}\",\n  \"alarm_voc\": {{ states('input_number.voc_limit') }},\n  \"alarm_temp_h\": {{ states('input_number.high_temperature_limit') }},\n  \"alarm_temp_l\": {{ states('input_number.low_temperature_limit') }},\n  \"alarm_hum_h\": {{ states('input_number.high_humidity_limit') }},\n  \"alarm_hum_l\": {{ states('input_number.low_humidity_limit') }},\n  \"rst_wifi_prov\": {{ states('input_boolean.reset_wifi_configuration') | bool | lower}}\n}\n"
+                },
+                "action": "mqtt.publish"
+              }
+            ]
+          },
+          "blueprint_inputs": null,
+          "context": {
+            "id": "01JXTN5QD5EJGYGW9M1JT982HE",
+            "parent_id": "01JXTN5QD4D3QQF9HCAVBFMXQB",
+            "user_id": null
+          }
+        },
+        "short_dict": {
+          "last_step": "sequence/0",
+          "run_id": "b6f4d952facdad58b41fdb8141cd2f01",
+          "state": "stopped",
+          "script_execution": "finished",
+          "timestamp": {
+            "start": "2025-06-15T20:40:54.439064+00:00",
+            "finish": "2025-06-15T20:40:54.455581+00:00"
+          },
+          "domain": "script",
+          "item_id": "send_mqtt_aqi_config"
+        }
+      },
+      {
+        "extended_dict": {
+          "last_step": "sequence/0",
+          "run_id": "443496c5b73e92e7a31b209bfce6130d",
+          "state": "stopped",
+          "script_execution": "finished",
+          "timestamp": {
+            "start": "2025-06-15T20:41:06.184355+00:00",
+            "finish": "2025-06-15T20:41:06.196339+00:00"
+          },
+          "domain": "script",
+          "item_id": "send_mqtt_aqi_config",
+          "trace": {
+            "sequence/0": [
+              {
+                "path": "sequence/0",
+                "timestamp": "2025-06-15T20:41:06.185113+00:00",
+                "changed_variables": {
+                  "this": {
+                    "entity_id": "script.send_mqtt_aqi_config",
+                    "state": "off",
+                    "attributes": {
+                      "last_triggered": "2025-06-15T20:40:54.439350+00:00",
+                      "mode": "single",
+                      "current": 0,
+                      "friendly_name": "Send AQI Device configuration over mqtt"
+                    },
+                    "last_changed": "2025-06-15T20:40:54.453652+00:00",
+                    "last_reported": "2025-06-15T20:40:54.453652+00:00",
+                    "last_updated": "2025-06-15T20:40:54.453652+00:00",
+                    "context": {
+                      "id": "01JXTN5QD5EJGYGW9M1JT982HE",
+                      "parent_id": "01JXTN5QD4D3QQF9HCAVBFMXQB",
+                      "user_id": null
+                    }
+                  },
+                  "context": {
+                    "id": "01JXTN62W6V8G91W6XWXE41ZPS",
+                    "parent_id": "01JXTN62W5Q7B765QKEA49BTB0",
+                    "user_id": null
+                  }
+                },
+                "result": {
+                  "params": {
+                    "domain": "mqtt",
+                    "service": "publish",
+                    "service_data": {
+                      "topic": "/tfm/nrr/airquality/config",
+                      "payload": "{\n  \"screen_sec\": 100,\n  \"room\": \"salon\",\n  \"alarm_voc\": 151.0,\n  \"alarm_temp_h\": 33.0,\n  \"alarm_temp_l\": 17.0,\n  \"alarm_hum_h\": 70.0,\n  \"alarm_hum_l\": 45.0,\n  \"rst_wifi_prov\": false\n}"
+                    },
+                    "target": {}
+                  },
+                  "running_script": false
+                }
+              }
+            ]
+          },
+          "config": {
+            "alias": "Send AQI Device configuration over mqtt",
+            "sequence": [
+              {
+                "data": {
+                  "topic": "/tfm/nrr/airquality/config",
+                  "payload": "{\n  \"screen_sec\": 100,\n  \"room\": \"{{ states('input_text.room_name') }}\",\n  \"alarm_voc\": {{ states('input_number.voc_limit') }},\n  \"alarm_temp_h\": {{ states('input_number.high_temperature_limit') }},\n  \"alarm_temp_l\": {{ states('input_number.low_temperature_limit') }},\n  \"alarm_hum_h\": {{ states('input_number.high_humidity_limit') }},\n  \"alarm_hum_l\": {{ states('input_number.low_humidity_limit') }},\n  \"rst_wifi_prov\": {{ states('input_boolean.reset_wifi_configuration') | bool | lower}}\n}\n"
+                },
+                "action": "mqtt.publish"
+              }
+            ]
+          },
+          "blueprint_inputs": null,
+          "context": {
+            "id": "01JXTN62W6V8G91W6XWXE41ZPS",
+            "parent_id": "01JXTN62W5Q7B765QKEA49BTB0",
+            "user_id": null
+          }
+        },
+        "short_dict": {
+          "last_step": "sequence/0",
+          "run_id": "443496c5b73e92e7a31b209bfce6130d",
+          "state": "stopped",
+          "script_execution": "finished",
+          "timestamp": {
+            "start": "2025-06-15T20:41:06.184355+00:00",
+            "finish": "2025-06-15T20:41:06.196339+00:00"
+          },
+          "domain": "script",
+          "item_id": "send_mqtt_aqi_config"
+        }
+      },
+      {
+        "extended_dict": {
+          "last_step": "sequence/0",
+          "run_id": "5c9dc9c06f4158f24add9fbb099edd4c",
+          "state": "stopped",
+          "script_execution": "finished",
+          "timestamp": {
+            "start": "2025-06-15T20:51:27.021015+00:00",
+            "finish": "2025-06-15T20:51:27.045674+00:00"
+          },
+          "domain": "script",
+          "item_id": "send_mqtt_aqi_config",
+          "trace": {
+            "sequence/0": [
+              {
+                "path": "sequence/0",
+                "timestamp": "2025-06-15T20:51:27.022193+00:00",
+                "changed_variables": {
+                  "this": {
+                    "entity_id": "script.send_mqtt_aqi_config",
+                    "state": "off",
+                    "attributes": {
+                      "last_triggered": "2025-06-15T20:41:06.184655+00:00",
+                      "mode": "single",
+                      "current": 0,
+                      "friendly_name": "Send AQI Device configuration over mqtt"
+                    },
+                    "last_changed": "2025-06-15T20:41:06.194387+00:00",
+                    "last_reported": "2025-06-15T20:41:06.194387+00:00",
+                    "last_updated": "2025-06-15T20:41:06.194387+00:00",
+                    "context": {
+                      "id": "01JXTN62W6V8G91W6XWXE41ZPS",
+                      "parent_id": "01JXTN62W5Q7B765QKEA49BTB0",
+                      "user_id": null
+                    }
+                  },
+                  "context": {
+                    "id": "01JXTNS15A0JDFT6KPQ1MQ3C15",
+                    "parent_id": "01JXTNS157Z222NFM8RJQDJG8M",
+                    "user_id": null
+                  }
+                },
+                "result": {
+                  "params": {
+                    "domain": "mqtt",
+                    "service": "publish",
+                    "service_data": {
+                      "topic": "/tfm/nrr/airquality/config",
+                      "payload": "{\n  \"screen_sec\": 100,\n  \"room\": \"salon\",\n  \"alarm_voc\": 151.0,\n  \"alarm_temp_h\": 22.0,\n  \"alarm_temp_l\": 17.0,\n  \"alarm_hum_h\": 70.0,\n  \"alarm_hum_l\": 45.0,\n  \"rst_wifi_prov\": false\n}"
+                    },
+                    "target": {}
+                  },
+                  "running_script": false
+                }
+              }
+            ]
+          },
+          "config": {
+            "alias": "Send AQI Device configuration over mqtt",
+            "sequence": [
+              {
+                "data": {
+                  "topic": "/tfm/nrr/airquality/config",
+                  "payload": "{\n  \"screen_sec\": 100,\n  \"room\": \"{{ states('input_text.room_name') }}\",\n  \"alarm_voc\": {{ states('input_number.voc_limit') }},\n  \"alarm_temp_h\": {{ states('input_number.high_temperature_limit') }},\n  \"alarm_temp_l\": {{ states('input_number.low_temperature_limit') }},\n  \"alarm_hum_h\": {{ states('input_number.high_humidity_limit') }},\n  \"alarm_hum_l\": {{ states('input_number.low_humidity_limit') }},\n  \"rst_wifi_prov\": {{ states('input_boolean.reset_wifi_configuration') | bool | lower}}\n}\n"
+                },
+                "action": "mqtt.publish"
+              }
+            ]
+          },
+          "blueprint_inputs": null,
+          "context": {
+            "id": "01JXTNS15A0JDFT6KPQ1MQ3C15",
+            "parent_id": "01JXTNS157Z222NFM8RJQDJG8M",
+            "user_id": null
+          }
+        },
+        "short_dict": {
+          "last_step": "sequence/0",
+          "run_id": "5c9dc9c06f4158f24add9fbb099edd4c",
+          "state": "stopped",
+          "script_execution": "finished",
+          "timestamp": {
+            "start": "2025-06-15T20:51:27.021015+00:00",
+            "finish": "2025-06-15T20:51:27.045674+00:00"
+          },
+          "domain": "script",
+          "item_id": "send_mqtt_aqi_config"
+        }
+      },
+      {
+        "extended_dict": {
+          "last_step": "sequence/0",
+          "run_id": "97d246318b7726d0892d0e2433684eb6",
+          "state": "stopped",
+          "script_execution": "finished",
+          "timestamp": {
+            "start": "2025-06-15T20:51:32.602586+00:00",
+            "finish": "2025-06-15T20:51:32.627419+00:00"
+          },
+          "domain": "script",
+          "item_id": "send_mqtt_aqi_config",
+          "trace": {
+            "sequence/0": [
+              {
+                "path": "sequence/0",
+                "timestamp": "2025-06-15T20:51:32.603826+00:00",
+                "changed_variables": {
+                  "this": {
+                    "entity_id": "script.send_mqtt_aqi_config",
+                    "state": "off",
+                    "attributes": {
+                      "last_triggered": "2025-06-15T20:51:27.021441+00:00",
+                      "mode": "single",
+                      "current": 0,
+                      "friendly_name": "Send AQI Device configuration over mqtt"
+                    },
+                    "last_changed": "2025-06-15T20:51:27.042446+00:00",
+                    "last_reported": "2025-06-15T20:51:27.042446+00:00",
+                    "last_updated": "2025-06-15T20:51:27.042446+00:00",
+                    "context": {
+                      "id": "01JXTNS15A0JDFT6KPQ1MQ3C15",
+                      "parent_id": "01JXTNS157Z222NFM8RJQDJG8M",
+                      "user_id": null
+                    }
+                  },
+                  "context": {
+                    "id": "01JXTNS6KQ59TDP43YJTTGNNE3",
+                    "parent_id": "01JXTNS6KN8KRJVSN8QZCT4PG7",
+                    "user_id": null
+                  }
+                },
+                "result": {
+                  "params": {
+                    "domain": "mqtt",
+                    "service": "publish",
+                    "service_data": {
+                      "topic": "/tfm/nrr/airquality/config",
+                      "payload": "{\n  \"screen_sec\": 100,\n  \"room\": \"salon\",\n  \"alarm_voc\": 151.0,\n  \"alarm_temp_h\": 22.0,\n  \"alarm_temp_l\": 34.0,\n  \"alarm_hum_h\": 70.0,\n  \"alarm_hum_l\": 45.0,\n  \"rst_wifi_prov\": false\n}"
+                    },
+                    "target": {}
+                  },
+                  "running_script": false
+                }
+              }
+            ]
+          },
+          "config": {
+            "alias": "Send AQI Device configuration over mqtt",
+            "sequence": [
+              {
+                "data": {
+                  "topic": "/tfm/nrr/airquality/config",
+                  "payload": "{\n  \"screen_sec\": 100,\n  \"room\": \"{{ states('input_text.room_name') }}\",\n  \"alarm_voc\": {{ states('input_number.voc_limit') }},\n  \"alarm_temp_h\": {{ states('input_number.high_temperature_limit') }},\n  \"alarm_temp_l\": {{ states('input_number.low_temperature_limit') }},\n  \"alarm_hum_h\": {{ states('input_number.high_humidity_limit') }},\n  \"alarm_hum_l\": {{ states('input_number.low_humidity_limit') }},\n  \"rst_wifi_prov\": {{ states('input_boolean.reset_wifi_configuration') | bool | lower}}\n}\n"
+                },
+                "action": "mqtt.publish"
+              }
+            ]
+          },
+          "blueprint_inputs": null,
+          "context": {
+            "id": "01JXTNS6KQ59TDP43YJTTGNNE3",
+            "parent_id": "01JXTNS6KN8KRJVSN8QZCT4PG7",
+            "user_id": null
+          }
+        },
+        "short_dict": {
+          "last_step": "sequence/0",
+          "run_id": "97d246318b7726d0892d0e2433684eb6",
+          "state": "stopped",
+          "script_execution": "finished",
+          "timestamp": {
+            "start": "2025-06-15T20:51:32.602586+00:00",
+            "finish": "2025-06-15T20:51:32.627419+00:00"
+          },
+          "domain": "script",
+          "item_id": "send_mqtt_aqi_config"
+        }
+      },
+      {
+        "extended_dict": {
+          "last_step": "sequence/0",
+          "run_id": "82be49c22b7845ad24a667b0f9140670",
+          "state": "stopped",
+          "script_execution": "finished",
+          "timestamp": {
+            "start": "2025-06-15T20:53:10.545970+00:00",
+            "finish": "2025-06-15T20:53:10.569822+00:00"
+          },
+          "domain": "script",
+          "item_id": "send_mqtt_aqi_config",
+          "trace": {
+            "sequence/0": [
+              {
+                "path": "sequence/0",
+                "timestamp": "2025-06-15T20:53:10.547214+00:00",
+                "changed_variables": {
+                  "this": {
+                    "entity_id": "script.send_mqtt_aqi_config",
+                    "state": "off",
+                    "attributes": {
+                      "last_triggered": "2025-06-15T20:51:32.603066+00:00",
+                      "mode": "single",
+                      "current": 0,
+                      "friendly_name": "Send AQI Device configuration over mqtt"
+                    },
+                    "last_changed": "2025-06-15T20:51:32.624245+00:00",
+                    "last_reported": "2025-06-15T20:51:32.624245+00:00",
+                    "last_updated": "2025-06-15T20:51:32.624245+00:00",
+                    "context": {
+                      "id": "01JXTNS6KQ59TDP43YJTTGNNE3",
+                      "parent_id": "01JXTNS6KN8KRJVSN8QZCT4PG7",
+                      "user_id": null
+                    }
+                  },
+                  "context": {
+                    "id": "01JXTNW68FMD8R839FGSET1P8K",
+                    "parent_id": "01JXTNW68DKZN31S3TF885E97Y",
+                    "user_id": null
+                  }
+                },
+                "result": {
+                  "params": {
+                    "domain": "mqtt",
+                    "service": "publish",
+                    "service_data": {
+                      "topic": "/tfm/nrr/airquality/config",
+                      "payload": "{\n  \"screen_sec\": 100,\n  \"room\": \"salon\",\n  \"alarm_voc\": 151.0,\n  \"alarm_temp_h\": 32.0,\n  \"alarm_temp_l\": 27.0,\n  \"alarm_hum_h\": 70.0,\n  \"alarm_hum_l\": 45.0,\n  \"rst_wifi_prov\": false\n}"
+                    },
+                    "target": {}
+                  },
+                  "running_script": false
+                }
+              }
+            ]
+          },
+          "config": {
+            "alias": "Send AQI Device configuration over mqtt",
+            "sequence": [
+              {
+                "data": {
+                  "topic": "/tfm/nrr/airquality/config",
+                  "payload": "{\n  \"screen_sec\": 100,\n  \"room\": \"{{ states('input_text.room_name') }}\",\n  \"alarm_voc\": {{ states('input_number.voc_limit') }},\n  \"alarm_temp_h\": {{ states('input_number.high_temperature_limit') }},\n  \"alarm_temp_l\": {{ states('input_number.low_temperature_limit') }},\n  \"alarm_hum_h\": {{ states('input_number.high_humidity_limit') }},\n  \"alarm_hum_l\": {{ states('input_number.low_humidity_limit') }},\n  \"rst_wifi_prov\": {{ states('input_boolean.reset_wifi_configuration') | bool | lower}}\n}\n"
+                },
+                "action": "mqtt.publish"
+              }
+            ]
+          },
+          "blueprint_inputs": null,
+          "context": {
+            "id": "01JXTNW68FMD8R839FGSET1P8K",
+            "parent_id": "01JXTNW68DKZN31S3TF885E97Y",
+            "user_id": null
+          }
+        },
+        "short_dict": {
+          "last_step": "sequence/0",
+          "run_id": "82be49c22b7845ad24a667b0f9140670",
+          "state": "stopped",
+          "script_execution": "finished",
+          "timestamp": {
+            "start": "2025-06-15T20:53:10.545970+00:00",
+            "finish": "2025-06-15T20:53:10.569822+00:00"
+          },
+          "domain": "script",
+          "item_id": "send_mqtt_aqi_config"
+        }
+      }
+    ]
+  }
+}

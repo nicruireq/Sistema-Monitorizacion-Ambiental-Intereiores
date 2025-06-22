@@ -1,0 +1,96 @@
+{
+  "version": 1,
+  "minor_version": 1,
+  "key": "core.restore_state",
+  "data": [
+    {
+      "state": {"entity_id":"person.nicolas_ruiz","state":"unknown","attributes":{"editable":true,"id":"nicolas_ruiz","device_trackers":[],"user_id":"50366d4ad77c4d428f3865f37e8c3bfd","friendly_name":"Nicolas Ruiz"},"last_changed":"2025-06-22T13:24:19.570580+00:00","last_reported":"2025-06-22T13:24:53.430160+00:00","last_updated":"2025-06-22T13:24:53.430160+00:00","context":{"id":"01JYBX0CHPM7EYQQ6CWNF9CGQC","parent_id":null,"user_id":null}},
+      "extra_data": null,
+      "last_seen": "2025-06-22T15:54:53.443656+00:00"
+    },
+    {
+      "state": {"entity_id":"conversation.home_assistant","state":"unknown","attributes":{"friendly_name":"Home Assistant","supported_features":1},"last_changed":"2025-06-22T13:24:35.914167+00:00","last_reported":"2025-06-22T13:24:35.914167+00:00","last_updated":"2025-06-22T13:24:35.914167+00:00","context":{"id":"01JYBWZVEAH83WJ20J26V987G6","parent_id":null,"user_id":null}},
+      "extra_data": null,
+      "last_seen": "2025-06-22T15:54:53.443656+00:00"
+    },
+    {
+      "state": {"entity_id":"script.send_mqtt_aqi_config","state":"off","attributes":{"last_triggered":"2025-06-15T20:53:10.546452+00:00","mode":"single","current":0,"friendly_name":"Send AQI Device configuration over mqtt"},"last_changed":"2025-06-22T13:24:37.829143+00:00","last_reported":"2025-06-22T13:24:37.829143+00:00","last_updated":"2025-06-22T13:24:37.829143+00:00","context":{"id":"01JYBWZXA5E5TKVHVF56M3T565","parent_id":null,"user_id":null}},
+      "extra_data": null,
+      "last_seen": "2025-06-22T15:54:53.443656+00:00"
+    },
+    {
+      "state": {"entity_id":"input_button.configure","state":"2025-06-15T20:53:10.542085+00:00","attributes":{"editable":true,"icon":"mdi:send","friendly_name":"configure"},"last_changed":"2025-06-22T13:24:37.907153+00:00","last_reported":"2025-06-22T13:24:37.907153+00:00","last_updated":"2025-06-22T13:24:37.907153+00:00","context":{"id":"01JYBWZXCK17EHY8K2X262FZY6","parent_id":null,"user_id":null}},
+      "extra_data": null,
+      "last_seen": "2025-06-22T15:54:53.443656+00:00"
+    },
+    {
+      "state": {"entity_id":"input_number.high_temperature_limit","state":"32.0","attributes":{"initial":null,"editable":true,"min":0.0,"max":100.0,"step":1.0,"mode":"slider","icon":"mdi:sun-thermometer","friendly_name":"High Temperature limit"},"last_changed":"2025-06-22T13:24:37.908546+00:00","last_reported":"2025-06-22T13:24:37.908546+00:00","last_updated":"2025-06-22T13:24:37.908546+00:00","context":{"id":"01JYBWZXCMY5NGBS0VFXQ52GG3","parent_id":null,"user_id":null}},
+      "extra_data": null,
+      "last_seen": "2025-06-22T15:54:53.443656+00:00"
+    },
+    {
+      "state": {"entity_id":"input_number.low_temperature_limit","state":"27.0","attributes":{"initial":null,"editable":true,"min":0.0,"max":100.0,"step":1.0,"mode":"slider","icon":"mdi:snowflake-thermometer","friendly_name":"Low Temperature limit"},"last_changed":"2025-06-22T13:24:37.909395+00:00","last_reported":"2025-06-22T13:24:37.909395+00:00","last_updated":"2025-06-22T13:24:37.909395+00:00","context":{"id":"01JYBWZXCNMDGSSPF313T0BF23","parent_id":null,"user_id":null}},
+      "extra_data": null,
+      "last_seen": "2025-06-22T15:54:53.443656+00:00"
+    },
+    {
+      "state": {"entity_id":"input_number.high_humidity_limit","state":"70.0","attributes":{"initial":null,"editable":true,"min":0.0,"max":100.0,"step":1.0,"mode":"slider","icon":"mdi:cloud-percent","friendly_name":"High Humidity limit"},"last_changed":"2025-06-22T13:24:37.911029+00:00","last_reported":"2025-06-22T13:24:37.911029+00:00","last_updated":"2025-06-22T13:24:37.911029+00:00","context":{"id":"01JYBWZXCQ06NQBVGBQ3GY1BQY","parent_id":null,"user_id":null}},
+      "extra_data": null,
+      "last_seen": "2025-06-22T15:54:53.443656+00:00"
+    },
+    {
+      "state": {"entity_id":"input_number.low_humidity_limit","state":"45.0","attributes":{"initial":null,"editable":true,"min":0.0,"max":100.0,"step":1.0,"mode":"slider","icon":"mdi:water-percent","friendly_name":"Low Humidity limit"},"last_changed":"2025-06-22T13:24:37.911870+00:00","last_reported":"2025-06-22T13:24:37.911870+00:00","last_updated":"2025-06-22T13:24:37.911870+00:00","context":{"id":"01JYBWZXCQGMM9SREZNGHA69CJ","parent_id":null,"user_id":null}},
+      "extra_data": null,
+      "last_seen": "2025-06-22T15:54:53.443656+00:00"
+    },
+    {
+      "state": {"entity_id":"input_number.voc_limit","state":"151.0","attributes":{"initial":null,"editable":true,"min":0.0,"max":500.0,"step":1.0,"mode":"slider","icon":"mdi:air-filter","friendly_name":"VOC limit"},"last_changed":"2025-06-22T13:24:37.912508+00:00","last_reported":"2025-06-22T13:24:37.912508+00:00","last_updated":"2025-06-22T13:24:37.912508+00:00","context":{"id":"01JYBWZXCRD2XNFF5YVH2MDC41","parent_id":null,"user_id":null}},
+      "extra_data": null,
+      "last_seen": "2025-06-22T15:54:53.443656+00:00"
+    },
+    {
+      "state": {"entity_id":"input_boolean.reset_wifi_configuration","state":"off","attributes":{"editable":true,"friendly_name":"Reset WiFi configuration"},"last_changed":"2025-06-22T13:24:37.913882+00:00","last_reported":"2025-06-22T13:24:37.913882+00:00","last_updated":"2025-06-22T13:24:37.913882+00:00","context":{"id":"01JYBWZXCSHKTB72REKVFG2PFC","parent_id":null,"user_id":null}},
+      "extra_data": null,
+      "last_seen": "2025-06-22T15:54:53.443656+00:00"
+    },
+    {
+      "state": {"entity_id":"input_text.room_name","state":"salon","attributes":{"editable":true,"min":0,"max":100,"pattern":null,"mode":"text","icon":"mdi:home-floor-b","friendly_name":"Room name"},"last_changed":"2025-06-22T13:24:45.388388+00:00","last_reported":"2025-06-22T13:24:45.388388+00:00","last_updated":"2025-06-22T13:24:45.388388+00:00","context":{"id":"01JYBX04PCNMNZMJFSS257Q7PW","parent_id":null,"user_id":null}},
+      "extra_data": null,
+      "last_seen": "2025-06-22T15:54:53.443656+00:00"
+    },
+    {
+      "state": {"entity_id":"tts.google_translate_en_com","state":"unknown","attributes":{"friendly_name":"Google Translate en com"},"last_changed":"2025-06-22T13:24:53.103173+00:00","last_reported":"2025-06-22T13:24:53.103173+00:00","last_updated":"2025-06-22T13:24:53.103173+00:00","context":{"id":"01JYBX0C7FXMNC86FWVAD0BY9F","parent_id":null,"user_id":null}},
+      "extra_data": null,
+      "last_seen": "2025-06-22T15:54:53.443656+00:00"
+    },
+    {
+      "state": {"entity_id":"automation.trigger_the_sent_of_configuration_for_aqi_device_over_mqtt","state":"on","attributes":{"last_triggered":"2025-06-15T20:53:10.544394+00:00","mode":"single","current":0,"friendly_name":"Trigger the sent of configuration for aqi device over mqtt"},"last_changed":"2025-06-22T13:24:53.141987+00:00","last_reported":"2025-06-22T13:24:53.141987+00:00","last_updated":"2025-06-22T13:24:53.141987+00:00","context":{"id":"01JYBX0C8N3P7MAJA8T4XQX5N5","parent_id":null,"user_id":null}},
+      "extra_data": null,
+      "last_seen": "2025-06-22T15:54:53.443656+00:00"
+    },
+    {
+      "state": {"entity_id":"sensor.temperature","state":"unknown","attributes":{"unit_of_measurement":"ºC","friendly_name":"Temperature"},"last_changed":"2025-06-22T13:24:53.642231+00:00","last_reported":"2025-06-22T13:24:53.642231+00:00","last_updated":"2025-06-22T13:24:53.642231+00:00","context":{"id":"01JYBX0CRASGVJKBZRS94BWNXX","parent_id":null,"user_id":null}},
+      "extra_data": {
+        "native_value": null,
+        "native_unit_of_measurement": "ºC"
+      },
+      "last_seen": "2025-06-22T15:54:53.443656+00:00"
+    },
+    {
+      "state": {"entity_id":"sensor.humidity","state":"unknown","attributes":{"unit_of_measurement":"%","friendly_name":"Humidity"},"last_changed":"2025-06-22T13:24:53.642682+00:00","last_reported":"2025-06-22T13:24:53.642682+00:00","last_updated":"2025-06-22T13:24:53.642682+00:00","context":{"id":"01JYBX0CRAX07CHNMJ1X892G1G","parent_id":null,"user_id":null}},
+      "extra_data": {
+        "native_value": null,
+        "native_unit_of_measurement": "%"
+      },
+      "last_seen": "2025-06-22T15:54:53.443656+00:00"
+    },
+    {
+      "state": {"entity_id":"sensor.voc","state":"unknown","attributes":{"friendly_name":"VOC"},"last_changed":"2025-06-22T13:24:53.642901+00:00","last_reported":"2025-06-22T13:24:53.642901+00:00","last_updated":"2025-06-22T13:24:53.642901+00:00","context":{"id":"01JYBX0CRAJY1MT09TWKKX0J9F","parent_id":null,"user_id":null}},
+      "extra_data": {
+        "native_value": null,
+        "native_unit_of_measurement": null
+      },
+      "last_seen": "2025-06-22T15:54:53.443656+00:00"
+    }
+  ]
+}

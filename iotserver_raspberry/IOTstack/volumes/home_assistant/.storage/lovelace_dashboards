@@ -1,0 +1,35 @@
+{
+  "version": 1,
+  "minor_version": 1,
+  "key": "lovelace_dashboards",
+  "data": {
+    "items": [
+      {
+        "id": "map",
+        "icon": "mdi:map",
+        "title": "Mapa",
+        "url_path": "map",
+        "show_in_sidebar": true,
+        "mode": "storage",
+        "require_admin": false
+      },
+      {
+        "id": "dashboard_aqi",
+        "show_in_sidebar": true,
+        "title": "AQI",
+        "require_admin": false,
+        "mode": "storage",
+        "url_path": "dashboard-aqi",
+        "icon": "mdi:home-thermometer-outline"
+      },
+      {
+        "id": "dashboard_prueba",
+        "show_in_sidebar": true,
+        "title": "prueba",
+        "require_admin": false,
+        "mode": "storage",
+        "url_path": "dashboard-prueba"
+      }
+    ]
+  }
+}

@@ -1,0 +1,91 @@
+{
+  "version": 1,
+  "minor_version": 1,
+  "key": "lovelace.dashboard_aqi",
+  "data": {
+    "config": {
+      "views": [
+        {
+          "path": "default_view",
+          "title": "Home",
+          "cards": [
+            {
+              "type": "entities",
+              "entities": [
+                "person.nicolas_ruiz"
+              ]
+            },
+            {
+              "square": true,
+              "type": "grid",
+              "cards": [
+                {
+                  "graph": "line",
+                  "type": "sensor",
+                  "entity": "sensor.temperature",
+                  "detail": 1,
+                  "name": "Temperature sensor",
+                  "icon": "mdi:thermometer",
+                  "unit": "ºC"
+                },
+                {
+                  "type": "gauge",
+                  "entity": "sensor.humidity",
+                  "name": "Humidity",
+                  "unit": "%",
+                  "min": 0,
+                  "max": 100
+                },
+                {
+                  "type": "gauge",
+                  "entity": "sensor.voc",
+                  "name": "Organic Volatile Compounds",
+                  "min": 1,
+                  "max": 500
+                }
+              ],
+              "columns": 3,
+              "title": "Home Sensors"
+            },
+            {
+              "type": "weather-forecast",
+              "entity": "weather.forecast_casa",
+              "show_forecast": false
+            },
+            {
+              "type": "entities",
+              "entities": [
+                {
+                  "entity": "input_text.room_name"
+                },
+                {
+                  "entity": "input_number.high_temperature_limit"
+                },
+                {
+                  "entity": "input_number.low_temperature_limit"
+                },
+                {
+                  "entity": "input_number.high_humidity_limit"
+                },
+                {
+                  "entity": "input_number.low_humidity_limit"
+                },
+                {
+                  "entity": "input_number.voc_limit"
+                },
+                {
+                  "entity": "input_boolean.reset_wifi_configuration"
+                },
+                {
+                  "entity": "input_button.configure"
+                }
+              ],
+              "title": "AQISensors configuration",
+              "show_header_toggle": false
+            }
+          ]
+        }
+      ]
+    }
+  }
+}

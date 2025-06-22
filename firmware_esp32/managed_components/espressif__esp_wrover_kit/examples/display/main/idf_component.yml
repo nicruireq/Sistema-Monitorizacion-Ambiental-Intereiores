@@ -1,0 +1,6 @@
+description: BSP Display example
+
+dependencies:
+  esp_wrover_kit:
+    version: "^1.0.0"
+    override_path: "../../../bsp/esp_wrover_kit"

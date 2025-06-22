@@ -1,0 +1,17 @@
+{
+  "version": 1,
+  "minor_version": 1,
+  "key": "input_text",
+  "data": {
+    "items": [
+      {
+        "id": "room_name",
+        "name": "Room name",
+        "icon": "mdi:home-floor-b",
+        "max": 100,
+        "mode": "text",
+        "min": 0
+      }
+    ]
+  }
+}

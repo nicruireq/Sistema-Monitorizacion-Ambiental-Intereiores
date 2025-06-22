@@ -1,0 +1,260 @@
+[
+    {
+        "id": "07ec76c7b91483f4",
+        "type": "tab",
+        "label": "aqi-flow",
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
+        "id": "fa276a1390705efa",
+        "type": "mqtt-broker",
+        "name": "Raspberry-MQTT",
+        "broker": "mosquitto",
+        "port": 1883,
+        "clientid": "",
+        "autoConnect": true,
+        "usetls": false,
+        "protocolVersion": 4,
+        "keepalive": 60,
+        "cleansession": true,
+        "autoUnsubscribe": true,
+        "birthTopic": "",
+        "birthQos": "0",
+        "birthRetain": "false",
+        "birthPayload": "",
+        "birthMsg": {},
+        "closeTopic": "",
+        "closeQos": "0",
+        "closeRetain": "false",
+        "closePayload": "",
+        "closeMsg": {},
+        "willTopic": "",
+        "willQos": "0",
+        "willRetain": "false",
+        "willPayload": "",
+        "willMsg": {},
+        "userProps": "",
+        "sessionExpiry": ""
+    },
+    {
+        "id": "2e3b563bf69c57d8",
+        "type": "influxdb",
+        "hostname": "influxdb",
+        "port": 8086,
+        "protocol": "http",
+        "database": "aqi",
+        "name": "",
+        "usetls": false,
+        "tls": "",
+        "influxdbVersion": "1.x",
+        "url": "http://localhost:8086",
+        "timeout": 10,
+        "rejectUnauthorized": true
+    },
+    {
+        "id": "b2baedb7d9b4fc2f",
+        "type": "mqtt in",
+        "z": "07ec76c7b91483f4",
+        "name": "topic measures",
+        "topic": "/tfm/nrr/airquality/measures",
+        "qos": "2",
+        "datatype": "json",
+        "broker": "fa276a1390705efa",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 240,
+        "y": 140,
+        "wires": [
+            [
+                "93a362f5e8af48fc",
+                "c358bc91b3199e62"
+            ]
+        ]
+    },
+    {
+        "id": "93a362f5e8af48fc",
+        "type": "change",
+        "z": "07ec76c7b91483f4",
+        "name": "Prepare payload measures",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "{\t    \"temperature_celsius\" : payload.temp_celsius,\t    \"relative_humidity\" : payload.humidity_rh,\t    \"voc_raw\" : payload.voc_raw,\t    \"voc_index\" : payload.voc_index\t}",
+                "tot": "jsonata"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 500,
+        "y": 140,
+        "wires": [
+            [
+                "ba94ec91585999fa",
+                "ba7b3f1ad2ec7f9b"
+            ]
+        ]
+    },
+    {
+        "id": "ba7b3f1ad2ec7f9b",
+        "type": "influxdb out",
+        "z": "07ec76c7b91483f4",
+        "influxdb": "2e3b563bf69c57d8",
+        "name": "write-influxdb-sensors",
+        "measurement": "sensors",
+        "precision": "",
+        "retentionPolicy": "",
+        "database": "database",
+        "precisionV18FluxV20": "ms",
+        "retentionPolicyV18Flux": "",
+        "org": "organisation",
+        "bucket": "bucket",
+        "x": 800,
+        "y": 140,
+        "wires": []
+    },
+    {
+        "id": "c358bc91b3199e62",
+        "type": "debug",
+        "z": "07ec76c7b91483f4",
+        "name": "topic-measures",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "true",
+        "targetType": "full",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 460,
+        "y": 260,
+        "wires": []
+    },
+    {
+        "id": "ba94ec91585999fa",
+        "type": "debug",
+        "z": "07ec76c7b91483f4",
+        "name": "payload-change-measures",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "true",
+        "targetType": "full",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 840,
+        "y": 260,
+        "wires": []
+    },
+    {
+        "id": "99ee3a44105cd72d",
+        "type": "mqtt in",
+        "z": "07ec76c7b91483f4",
+        "name": "topic alarms",
+        "topic": "/tfm/nrr/airquality/alarms",
+        "qos": "2",
+        "datatype": "json",
+        "broker": "fa276a1390705efa",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 230,
+        "y": 380,
+        "wires": [
+            [
+                "39e95265a3b8883c",
+                "580cfaa4925113a4"
+            ]
+        ]
+    },
+    {
+        "id": "580cfaa4925113a4",
+        "type": "debug",
+        "z": "07ec76c7b91483f4",
+        "name": "topic-alarms",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 470,
+        "y": 460,
+        "wires": []
+    },
+    {
+        "id": "d8813bfc98ee9ce8",
+        "type": "debug",
+        "z": "07ec76c7b91483f4",
+        "name": "payload-change-alarms",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "true",
+        "targetType": "full",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 890,
+        "y": 460,
+        "wires": []
+    },
+    {
+        "id": "8360fc71f09fe7d3",
+        "type": "influxdb out",
+        "z": "07ec76c7b91483f4",
+        "influxdb": "2e3b563bf69c57d8",
+        "name": "write-influxdb-alarms",
+        "measurement": "alarms",
+        "precision": "",
+        "retentionPolicy": "",
+        "database": "database",
+        "precisionV18FluxV20": "ms",
+        "retentionPolicyV18Flux": "",
+        "org": "organisation",
+        "bucket": "bucket",
+        "x": 880,
+        "y": 380,
+        "wires": []
+    },
+    {
+        "id": "39e95265a3b8883c",
+        "type": "change",
+        "z": "07ec76c7b91483f4",
+        "name": "Prepare payload alarms",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "{\t    \"alarm_type\": payload.alarm_class,\t    \"activation\": $not(payload.disable),    \t    \"msg\": payload.info\t}",
+                "tot": "jsonata"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 510,
+        "y": 380,
+        "wires": [
+            [
+                "d8813bfc98ee9ce8",
+                "8360fc71f09fe7d3"
+            ]
+        ]
+    }
+]

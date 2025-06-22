@@ -1,0 +1,17 @@
+send_mqtt_aqi_config:
+  alias: Send AQI Device configuration over mqtt
+  sequence:
+    - service: mqtt.publish
+      data:
+        topic: "/tfm/nrr/airquality/config"
+        payload: >
+          {
+            "screen_sec": 100,
+            "room": "{{ states('input_text.room_name') }}",
+            "alarm_voc": {{ states('input_number.voc_limit') }},
+            "alarm_temp_h": {{ states('input_number.high_temperature_limit') }},
+            "alarm_temp_l": {{ states('input_number.low_temperature_limit') }},
+            "alarm_hum_h": {{ states('input_number.high_humidity_limit') }},
+            "alarm_hum_l": {{ states('input_number.low_humidity_limit') }},
+            "rst_wifi_prov": {{ states('input_boolean.reset_wifi_configuration') | bool | lower}}
+          }

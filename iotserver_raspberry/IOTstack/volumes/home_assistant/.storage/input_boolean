@@ -1,0 +1,13 @@
+{
+  "version": 1,
+  "minor_version": 1,
+  "key": "input_boolean",
+  "data": {
+    "items": [
+      {
+        "id": "reset_wifi_configuration",
+        "name": "Reset WiFi configuration"
+      }
+    ]
+  }
+}

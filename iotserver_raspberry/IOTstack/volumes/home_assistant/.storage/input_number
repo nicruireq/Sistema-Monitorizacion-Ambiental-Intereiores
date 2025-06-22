@@ -1,0 +1,54 @@
+{
+  "version": 1,
+  "minor_version": 1,
+  "key": "input_number",
+  "data": {
+    "items": [
+      {
+        "id": "high_temperature_limit",
+        "min": 0.0,
+        "max": 100.0,
+        "icon": "mdi:sun-thermometer",
+        "name": "High Temperature limit",
+        "mode": "slider",
+        "step": 1.0
+      },
+      {
+        "id": "low_temperature_limit",
+        "min": 0.0,
+        "max": 100.0,
+        "name": "Low Temperature limit",
+        "icon": "mdi:snowflake-thermometer",
+        "mode": "slider",
+        "step": 1.0
+      },
+      {
+        "id": "high_humidity_limit",
+        "min": 0.0,
+        "max": 100.0,
+        "name": "High Humidity limit",
+        "icon": "mdi:cloud-percent",
+        "mode": "slider",
+        "step": 1.0
+      },
+      {
+        "id": "low_humidity_limit",
+        "min": 0.0,
+        "max": 100.0,
+        "name": "Low Humidity limit",
+        "icon": "mdi:water-percent",
+        "mode": "slider",
+        "step": 1.0
+      },
+      {
+        "id": "voc_limit",
+        "min": 0.0,
+        "max": 500.0,
+        "name": "VOC limit",
+        "icon": "mdi:air-filter",
+        "mode": "slider",
+        "step": 1.0
+      }
+    ]
+  }
+}

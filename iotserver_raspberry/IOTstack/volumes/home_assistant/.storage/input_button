@@ -1,0 +1,14 @@
+{
+  "version": 1,
+  "minor_version": 1,
+  "key": "input_button",
+  "data": {
+    "items": [
+      {
+        "id": "configure",
+        "name": "configure",
+        "icon": "mdi:send"
+      }
+    ]
+  }
+}
